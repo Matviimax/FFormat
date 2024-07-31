@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background: #09254f;
+}
+
+/* NavBar */
+header {
+  position: fixed;
+  z-index: 10; /* Високе значення для перекриття інших елементів */
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2d5591;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  box-shadow: 0 5px 10px #000;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  transition: 0.5s;
+}
+
+header .logo:hover {
+  transform: scale(1.2);
+}
+
+header nav ul li {
+  position: relative;
+  float: left;
+}
+
+header nav ul li a {
+  padding: 15px;
+  color: #fff;
+  font-style: 16px;
+  display: block;
+}
+
+header nav ul li a:hover {
+  background: #09254f;
+}
+
+nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 180px;
+  background: #2d5591;
+  display: none;
+}
+
+nav ul li ul li {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li ul li img {
+  width: 20px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+}
+
+nav ul li:hover > ul {
+  display: initial;
+}
+
+/* Main */
+
+.top {
+  position: relative;
+}
+
+.top .background {
+  width: 100%;
+  /* height: 510px; */
+}
+
+.top .overlay {
+  position: absolute;
+  top: 10px; /* Відстань від верхнього краю контейнера */
+  right: 0px; /* Відстань від лівого краю контейнера */
+  width: 500px; /* Ширина накладеного зображення */
+  height: auto; /* Автоматичне коригування висоти для збереження пропорцій */
+}
+
+.top-text h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.top-text p {
+  padding: 0 6%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.content-ff {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.content-ff img {
+  width: 50%;
+  /* height: 384px; */
+}
+
+.content-ff p {
+  width: 50%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1%;
+}
+
+.footer-main {
+  position: relative;
+}
+
+.h2foot {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-main img {
+  width: 100%;
+  /* height: 314px; */
+}
+
+.text-overlay a {
+  display: block;
+  margin: 5px 0;
+  padding: 0px 100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.text-overlay a:hover {
+  transform: scale(1.1);
+}
+
+.text-overlay a {
+  color: #fff;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* центр тексту */
+  text-align: center;
+}
+
+footer {
+  padding: 0 2%;
+  margin-top: 40px;
+  background: #2d5591;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #fff;
+  margin: 2px 20px;
+}
+
+footer h2 a {
+  color: #fff;
+}
+
+footer img {
+  width: 50px;
+  margin: 2px 5px;
+  position: relative;
+  float: left;
+}
+
+/* ----- Photo -----*/
+
+.photo-logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 200px;
+  color: #fff;
+  opacity: 0.5;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.top p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.text-overlay-photo a {
+  display: block;
+  margin: 5px 0;
+  padding: 0px 100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  color: #8d8d8d;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.text-overlay-photo a:hover {
+  transform: scale(1.1);
+}
+
+.text-overlay-photo {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  /* transform: translate(-50%, -50%); центр тексту */
+  /* text-align: center; */
+}
+
+/* modes */
+
+.modes {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.modes img {
+  width: 50%;
+  /* filter: blur(4px); */
+  background: url("img/photo1.png");
+  mix-blend-mode: lighten;
+}
+
+.modes p {
+  width: 50%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1%;
+}
+
+/* modes list */
+
+.modes-list {
+  padding: 0 6%;
+}
+
+.modes-list ol li {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.modes-list ol li p {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modes-list ol li ul li {
+  list-style: circle;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* parameters */
+
+.blok {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.parameters h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  padding: 0 6%;
+}
+
+.parameters div img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* composition */
+
+.composition h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  padding: 0 6%;
+}
+
+.composition-list {
+  padding: 0 6%;
+}
+
+.composition-list h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  color: #d9d9d9;
+  text-align: center;
+}
+
+.composition-list ol li {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.composition-list ol li p {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: #fff;
+}
+
+.composition-list ol li ul li {
+  list-style: circle;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.comp-photo {
+  display: flex;
+}
+
+.comp-photo img {
+  width: 50%;
+  padding: 30px;
+}
+
+/* result */
+
+.result h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  padding: 0 6%;
+}
+
+.result p {
+  padding: 0 6%;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: #fff;
+  margin: 10px;
+}
+
+/* ----- Media ----- */
+
+@media (max-width: 1200px) {
+  .u {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-ff {
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+  .content-ff img,
+  .content-ff p {
+    min-width: 100%;
+  }
+  .top-text p,
+  .content-ff p {
+    font-size: 16px;
+  }
+  .text-overlay {
+    position: relative;
+    transform: initial;
+    top: 0;
+    left: 0;
+  }
+  .photo-logo {
+    position: relative;
+    text-align: center;
+    top: initial;
+    right: initial;
+    font-size: 100px;
+  }
+  .top p {
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+    right: initial;
+    text-align: center;
+    font-size: 12px;
+  }
+  .text-overlay-photo {
+    position: relative;
+    top: initial;
+    left: initial;
+  }
+  .text-overlay-photo a {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .modes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modes img {
+    width: 100%;
+  }
+  .modes p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .modes-list ol li {
+    font-size: 20px;
+  }
+  .modes-list ol li p {
+    font-size: 14px;
+  }
+  .parameters h2 {
+    font-size: 18px;
+  }
+  .parameters div img {
+    margin: 5px 0;
+  }
+  .composition h2,
+  .composition-list h3 {
+    font-size: 18px;
+  }
+  .composition-list ol li {
+    font-size: 20px;
+  }
+  .composition-list ol li ul li {
+    font-size: 14px;
+  }
+  .comp-photo img {
+    padding: 10px;
+  }
+  .result h2 {
+    font-size: 30px;
+  }
+  .result p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-ff {
+    /* max-width: none; */
+  }
+}
