@@ -414,6 +414,8 @@ footer img {
   margin: 10px;
 }
 
+/* ------ Video ----- */
+
 /* ----- Media ----- */
 
 @media (max-width: 1200px) {
@@ -424,8 +426,8 @@ footer img {
 
 @media (max-width: 992px) {
   .content-ff {
-    /* flex-direction: column; */
-    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
   }
   .content-ff img,
   .content-ff p {
@@ -507,11 +509,5 @@ footer img {
   }
   .result p {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .content-ff {
-    /* max-width: none; */
   }
 }
